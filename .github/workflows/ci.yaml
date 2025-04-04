@@ -28,6 +28,7 @@ jobs:
           pip install mkdocs-material
           pip install mkdocs
           pip install python-markdown-math
+          pip install mkdocs-mermaid2-plugin
 
       - name: Deploy
         run: |
