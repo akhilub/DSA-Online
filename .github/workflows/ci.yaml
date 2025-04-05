@@ -30,6 +30,10 @@ jobs:
           pip install python-markdown-math
           pip install mkdocs-mermaid2-plugin
 
+      - name: Create mkdocs.yml
+        run: |
+          echo "${{ secrets.MKDOCS_CONFIG }}" > mkdocs.yml
+
       - name: Deploy
         run: |
           git config --global user.name "GitHub Actions"
