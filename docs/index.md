@@ -15,10 +15,11 @@ This site contains detailed explanations and implementations of various LeetCode
 
 ## Latest Solutions
 
-- [1. Two Sum](solutions/1.md)
-- [2. Add Two Number](solutions/2.md)
-- [2226. Maximum Candies Allocated to K Children](solutions/2226.md)
+### Apr 5 2025
 
-```
+- [2226. Maximum Candies Allocated to K Children](problems/2226.md)
 
-```
+### Apr 4 2025
+
+- [1. Two Sum](problems/1.md)
+- [2. Add Two Number](problems/2.md)
