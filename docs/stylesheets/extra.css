@@ -1,0 +1,21 @@
+/* note */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: rgb(32, 148, 243);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.note,
+[data-md-color-scheme="slate"] .md-typeset details.note {
+  border-color: rgb(76, 174, 79);
+}
+
+/* tip */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: rgb(32, 148, 243);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip,
+[data-md-color-scheme="slate"] .md-typeset details.tip {
+  border-color: rgb(76, 174, 79);
+}
