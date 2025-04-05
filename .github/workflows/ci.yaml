@@ -31,8 +31,11 @@ jobs:
           pip install mkdocs-mermaid2-plugin
 
       - name: Create mkdocs.yml
+        shell: bash
         run: |
-          echo "${{ secrets.MKDOCS_CONFIG }}" > mkdocs.yml
+          cat > mkdocs.yml << 'EOL'
+          ${{ secrets.MKDOCS_CONFIG }}
+          EOL
 
       - name: Deploy
         run: |
