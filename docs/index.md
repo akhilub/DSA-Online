@@ -17,6 +17,7 @@ This site contains detailed explanations and implementations of various LeetCode
 
 - [1. Two Sum](solutions/1.md)
 - [2. Add Two Number](solutions/2.md)
+- [2226. Maximum Candies Allocated to K Children](solutions/2226.md)
 
 ```
 
