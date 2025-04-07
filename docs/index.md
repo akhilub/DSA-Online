@@ -1,8 +1,8 @@
-# DSA-Online LeetCode Solutions
+# DSA-Bible
 
-Welcome to my collection of LeetCode problem solutions!
+Welcome to my collection of DSA problems solutions!
 
-This site contains detailed explanations and implementations of various LeetCode problems.
+This site contains detailed explanations and implementations of various algorithms through LeetCode problems.
 
 ## Problem Categories
 

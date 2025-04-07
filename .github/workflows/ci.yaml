@@ -1,4 +1,4 @@
-name: Deploy DSA-Online
+name: Deploy DSA-Bible
 
 on:
   push:
