@@ -29,6 +29,7 @@ jobs:
           pip install mkdocs
           pip install python-markdown-math
           pip install mkdocs-mermaid2-plugin
+          pip install mkdocs-macros-plugin
 
       - name: Create mkdocs.yml
         shell: bash
