@@ -522,8 +522,6 @@
 <h2 id="solutions">Solutions</h2>
 <!-- vide solution:start -->
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/kVBm-LBbWB0?si=60y7XmDIvzahGNfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 <!-- vide solution: end -->
 
 <!-- solution:start -->
@@ -533,12 +531,11 @@
 <p>✅ Space complexity: <em>O(n)</em></p>
 <div class="admonition note">
 <p class="admonition-title">Notes</p>
-<p>We initialize two arrays <code>L</code> and <code>R</code>, where <code>L[i]</code> represents the minimum number of candies the current child should get when the current child's score is higher than the left child's score, and <code>R[i]</code> represents the minimum number of candies the current
-child should get when the current child's score is higher than the right child's score.
-Initially, <code>L[i]</code> = 1, <code>R[i]</code> = 1.
-We traverse the array from left to right once, and if the current child's score is higher than the left child's score, then <code>L[i] = L[i - 1] + 1</code>; Similarly, we traverse the array from right to left once, and if the current child's score is higher than theright child's score, then R[i] = R[i+1] + 1.
-Finally, we traverse the array of scores once, and the minimum number of candies each child should get is the maximum of <code>L[i]</code> and <code>R[i]</code>, and we add them up to get the answer.
-Time complexity <code>O(n)</code>, space complexity <code>O(n)</code>. Where <code>n</code> is the length of the array of scores.</p>
+<p>We initialize two arrays <code>L</code> and <code>R</code>, where <code>L[i]</code> represents the minimum number of candies the current child should get when the current child's score is higher than the left child's score, and <code>R[i]</code> represents the minimum number of candies the current child should get when the current child's score is higher than the right child's score. Initially, <code>L[i]</code> = 1, <code>R[i]</code> = 1.</p>
+<p>We traverse the array from left to right once, and if the current child's score is higher than the left child's score, then <code>L[i] = L[i - 1] + 1</code>;</p>
+<p>Similarly, we traverse the array from right to left once, and if the current child's score is higher than theright child's score, then <code>R[i] = R[i+1] + 1</code>.
+Finally, we traverse the array of scores once, and the minimum number of candies each child should get is the maximum of <code>L[i]</code> and <code>R[i]</code>, and we add them up to get the answer.</p>
+<p>Time complexity <code>O(n)</code>, space complexity <code>O(n)</code>. Where <code>n</code> is the length of the array of scores.</p>
 </div>
 <!-- tabs:start -->
 
@@ -569,10 +566,10 @@ Time complexity <code>O(n)</code>, space complexity <code>O(n)</code>. Where <co
 </div>
 </div>
 <h4 id="way-2">Way 2:</h4>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <ul>
-<li>Optimized</li>
+<li>Optimized, using less variable</li>
 </ul>
 </div>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python</label></div>
