@@ -1,3 +1,4 @@
+/* admonitions */
 /* note */
 .md-typeset .admonition.note,
 .md-typeset details.note {
@@ -18,6 +19,12 @@
 [data-md-color-scheme="slate"] .md-typeset .admonition.tip,
 [data-md-color-scheme="slate"] .md-typeset details.tip {
   border-color: rgb(76, 174, 79);
+}
+
+/* custom-icons */
+
+.md-checkmark {
+  color: var(--md-primary-fg-color);
 }
 
 /*tag hard*/
