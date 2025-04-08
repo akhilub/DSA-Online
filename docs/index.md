@@ -15,11 +15,15 @@ This site contains detailed explanations and implementations of various algorith
 
 ## Latest Solutions
 
-### Apr 5 2025
+### Apr 8, 2025
+
+- [135. Candy](problems/135.md)
+
+### Apr 5, 2025
 
 - [2226. Maximum Candies Allocated to K Children](problems/2226.md)
 
-### Apr 4 2025
+### Apr 4, 2025
 
 - [1. Two Sum](problems/1.md)
 - [2. Add Two Number](problems/2.md)
