@@ -19,3 +19,18 @@
 [data-md-color-scheme="slate"] .md-typeset details.tip {
   border-color: rgb(76, 174, 79);
 }
+
+/*tag hard*/
+.md-tag--hard {
+  color: rgb(251, 66, 4);
+}
+
+/*tag easy*/
+.md-tag--easy {
+  color: rgb(28 184 184);
+}
+
+/*tag medium*/
+.md-tag--medium {
+  color: rgb(255 184 0);
+}

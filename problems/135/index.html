@@ -463,15 +463,11 @@
   
 
 
+<p>{% for tag in tags %}<span class="md-tag">{{ tag }}</span>{% endfor %}</p>
 <!-- problem:start -->
 
 <h1 id="135-candy"><a href="https://leetcode.com/problems/candy/" title="Click me to Open Playground">135. Candy</a></h1>
-<p><code>Difficulty</code> ==Hard==</p>
-<div class="admonition danger">
-<p class="admonition-title">Difficulty</p>
-</div>
-<p>Hard</p>
-<p><code>Difficulty</code> { .default-class } ==Hard== { .red-class }</p>
+<p><span class="md-tag md-tag--{{ difficulty | lower }}">{{ difficulty }}</span></p>
 <h2 id="description">Description</h2>
 <!-- description:start -->
 
