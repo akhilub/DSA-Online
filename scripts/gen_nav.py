@@ -37,7 +37,11 @@ def generate_nav():
                 frontmatter = yaml.safe_load(frontmatter_text)
                 if 'title' in frontmatter and frontmatter['title']:
                     title = frontmatter['title']
-                    nav_items.append({f"{problem_num}. {title}": f"problems/{file}"})
+                    # Check if title already includes the problem number
+                    if title.startswith(f"{problem_num}."):
+                        nav_items.append({title: f"problems/{file}"})
+                    else:
+                        nav_items.append({f"{problem_num}. {title}": f"problems/{file}"})
                     continue
             except Exception:
                 pass
