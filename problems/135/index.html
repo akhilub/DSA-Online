@@ -26,7 +26,7 @@
     
     
       
-        <title>135. Candy - DSA-Bible</title>
+        <title>Candy - DSA-Bible</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#135-candy" class="md-skip">
+        <a href="#candy" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              135. Candy
+              Candy
             
           </span>
         </div>
@@ -599,7 +599,7 @@
 <p><span class="md-tag">Array</span><span class="md-tag">Greedy</span></p>
 <!-- problem:start -->
 
-<h1 id="135-candy"><a href="https://leetcode.com/problems/candy/" title="Click me to Open Playground">135. Candy</a></h1>
+<h1 id="candy"><a href="https://leetcode.com/problems/candy/" title="Click me to Open Playground">Candy</a></h1>
 <p><span class="md-tag md-tag--hard">Hard</span></p>
 <h2 id="description">Description</h2>
 <!-- description:start -->
@@ -677,10 +677,12 @@ Finally, we traverse the array of scores once, and the minimum number of candies
 </div>
 <h4 id="way-2">Way 2:</h4>
 <div class="admonition example">
-<p class="admonition-title">Example</p>
-<ul>
-<li>Optimized, using less variable</li>
-</ul>
+<p class="admonition-title">Optimized using less variables</p>
+<p>We initialize a <code>candies</code> array with 1 candy for each child.</p>
+<p>First, we go left to right: if a child has a higher rating than the one before, they get one more candy.</p>
+<p>Then, we go right to left: if a child has a higher rating than the one after, we ensure they have more candies by taking the max of current and one more than the next.</p>
+<p>Finally, we sum all <code>candies</code> and return the total.</p>
+<p>Time complexity <code>O(n)</code> , Space complexity <code>O(n)</code>.Where n is the number of children.</p>
 </div>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python</label></div>
 <div class="tabbed-content">
