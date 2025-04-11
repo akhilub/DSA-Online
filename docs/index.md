@@ -15,6 +15,10 @@ This site contains detailed explanations and implementations of various algorith
 
 ## Latest Solutions
 
+### Apr 10, 2025
+
+- [746. Min Cost Climbing Stairs](problems/746.md)
+
 ### Apr 8, 2025
 
 - [135. Candy](problems/135.md)
