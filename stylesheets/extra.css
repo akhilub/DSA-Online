@@ -43,12 +43,12 @@
 /* example */
 .md-typeset .admonition.example,
 .md-typeset details.example {
-  border-color: rgb(255 110 66);
+  border-color: var(--md-accent-fg-color);
 }
 
 [data-md-color-scheme="slate"] .md-typeset .admonition.example,
 [data-md-color-scheme="slate"] .md-typeset details.example {
-  border-color: rgb(124 77 255);
+  border-color: var(--md-accent-fg-color);
 }
 
 /* custom-icons */
