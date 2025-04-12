@@ -44,11 +44,19 @@
 .md-typeset .admonition.example,
 .md-typeset details.example {
   border-color: var(--md-accent-fg-color);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: inherit;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .admonition.example,
 [data-md-color-scheme="slate"] .md-typeset details.example {
   border-color: var(--md-accent-fg-color);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: inherit;
 }
 
 /* custom-icons */
