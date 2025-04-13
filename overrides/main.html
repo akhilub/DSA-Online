@@ -1,0 +1,4 @@
+{% extends "base.html" %} {% block extrahead %} {{ super() }}
+<link rel="manifest" href="{{ config.site_url }}manifest.webmanifest" />
+<meta name="theme-color" content="{{ config.theme.palette.primary }}" />
+{% endblock %}
