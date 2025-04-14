@@ -802,8 +802,8 @@
 <!-- solution:start -->
 
 <h3 id="approach-1-simulation">Approach 1: Simulation</h3>
-<p><span class="twemoji md-checkmark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-5-5 1.41-1.42L10 14.17l7.59-7.59L19 8m-7-6A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> Time complexity: <em>O(max((M,N)))</em></p>
-<p><span class="twemoji md-checkmark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-5-5 1.41-1.42L10 14.17l7.59-7.59L19 8m-7-6A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> Space complexity: <em>O(1)</em></p>
+<p><span class="twemoji md-checkmark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-5-5 1.41-1.42L10 14.17l7.59-7.59L19 8m-7-6A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> Time complexity: $<span class="arithmatex">\(O(max((M,N)))\)</span></p>
+<p><span class="twemoji md-checkmark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-5-5 1.41-1.42L10 14.17l7.59-7.59L19 8m-7-6A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> Space complexity: <span class="arithmatex">\(O(1)\)</span></p>
 <div class="admonition note">
 <p class="admonition-title">Notes</p>
 <p>We traverse two linked lists and at the same time, and use the variable <code>carry</code> to indicate whether there is a carry.</p>
@@ -812,7 +812,7 @@
 <p>Finally, we return the head node of the answer linked list.</p>
 <p>The time complexity is <code>O(max((M,N)))</code>, where <code>M</code> and <code>N</code> are the lengths of the two linked lists.
 We need to traverse the entire position of the two linked lists, and each position only needs <code>O(1)</code> time.
-Ignoring the space consumption of the answer, the space complexity is <code>O(max((M,N)))</code>.</p>
+Ignoring the space consumption of the answer, the space complexity is <code>O(1)</code>.</p>
 </div>
 <!-- tabs:start -->
 
