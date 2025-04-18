@@ -814,6 +814,7 @@
 
 <p>Given an m x n integer matrix heightMap representing the height of each unit cell in a 2D elevation map, return the volume of water it can trap after raining.</p>
 <p><strong>Example 1:</strong></p>
+<p><img alt="Example_1_img" src="https://assets.leetcode.com/uploads/2021/04/08/trap1-3d.jpg" /></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Input: heightMap = [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]]
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Output: 4
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Explanation: After the rain, water is trapped between the blocks.
@@ -821,6 +822,7 @@
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>The total volume of water trapped is 4.
 </span></code></pre></div>
 <p><strong>Example 2:</strong></p>
+<p><img alt="Example_2_img" src="https://assets.leetcode.com/uploads/2021/04/08/trap2-3d.jpg" /></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Input: heightMap = [[3,3,3,3,3],[3,2,2,2,3],[3,2,1,2,3],[3,2,2,2,3],[3,3,3,3,3]]
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Output: 10
 </span></code></pre></div>
@@ -856,7 +858,7 @@
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">trapRainWater</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">heightMap</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">heightMap</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">heightMap</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>            <span class="k">return</span> <span class="mi">0</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="n">m</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">heightMap</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">heightMap</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="n">m</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">heightMap</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">heightMap</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        <span class="n">pq</span> <span class="o">=</span> <span class="p">[]</span>     <span class="c1">#min heap</span>
 </span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="n">vis</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="c1"># Push all the boundary cells into the heap(aka priority queue)</span>
