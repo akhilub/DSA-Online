@@ -1,0 +1,10 @@
+mkdocs-material
+mkdocs
+mkdocs-git-revision-date-localized-plugin
+python-markdown-math
+mkdocs-mermaid2-plugin
+mkdocs-macros-plugin
+pyyaml
+pygments
+pymdown-extensions
+mkdocs-material[offline]
